@@ -5,32 +5,36 @@
 <div class="container">
 
 	<!-- NEWS -->
-        <h3> Top Headlines</h3>
-       
-	        <div class="row">
-	       from {{id}}
-		        {% for article in article%}
+	<h3>Articles from {{id}}</h3>
+	<h3 id="top"> Top Headlines</h3>
 
-		        	<div class="col-md-3">
-				        <div class="thumbnail">
-				        <a href="{{article.url}}" target="_blank">
-						      <img src="{{article.image}}" alt="{{article.title}}" class="img-responsive" styles="height:30px">
-						      </a>
-						      <div class="caption">
-						        <h4><a href="{{article.url}}" target="_blank">{{article.title |truncate(35)}}</a></h4>
-						        <p>{{article.description | truncate(80)}}</p>
-						        <a href="{{article.url}}" target="_blank"> Read More</a>
-						      </div>
-						      <div class="footer">
-						      Published at: {{article.date}}
-						      
-								
-							</div>
-	  					</div>
+	<div class="row">
 
-                     </div>
-                     
-			     	</div>	
-                     {% endfor %}               
-                 </div>
+		{% for article in article%}
+
+		<div class="col-md-3" id="articlecard">
+			<div class="panel panel-default" id="cardcontent">
+				<a href="{{article.url}}" target="_blank">
+					<img src="{{article.image}}" alt="{{article.title}}" class="img-responsive" styles="height:30px">
+				</a>
+
+				<div class="panel-body">
+					<div class="caption">
+					<h4><a href="{{article.url}}" target="_blank">{{article.title |truncate(35)}}</a></h4>
+					<!-- <p>{{article.description | truncate(80)}}</p> -->
+					<a href="{{article.url}}" target="_blank"> Read More</a>
+				</div>
+				<div class="footer">
+					Published at: {{article.date}}
+
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	{% endfor %}
+</div>
+
 {% endblock%}

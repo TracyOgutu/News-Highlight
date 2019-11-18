@@ -23,34 +23,13 @@
                 </div>
             </div>
         </div> 
-        <!-- <div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
-                <div class="card-header">Source:{{source.name}}</div>
-                <div class="card-body">
-                  <h5 class="card-title">{{ source.description |truncate(100)}}</h5>
-                  <p class="card-text"></p>
-                    <div>
-
-                        <span><a href="/article/{{source.id}}" class="btn btn-warning " style="max-width: 30rem;" id="articlebtn">
-                            View Articles:</a></span>   
-                        <span><a href="{{source.url}}" class="btn btn-info" style="max-width: 30rem;" id="sourcebtn">Visit {{source.id}}</a></span>
-
-                    </div>
-                </div>
-              </div><br><br> -->
-
-        <!-- <div class="card-deck">
-                <div class="card">
-                 <img src="..." class="card-img-top" alt="..."> 
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"> </p>
-                    <p class="card-text"><small class="text-muted"></small></p>
-                    
-                </div>
-                </div>
-                
-        </div> -->
+       
     {% endfor %}   
 </div>
 {% endfor %}
 {% endmacro%}
+
+{% macro displayArticleList(article_list)%}
+{% for article in article |batch(4)%}
+{%endfor%}
+{%endmacro%}
