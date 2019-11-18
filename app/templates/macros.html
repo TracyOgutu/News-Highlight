@@ -2,7 +2,7 @@
 {% for source_display in source_list |batch(4)%}
 <div class="row">
     {% for source in source_display %}
-        <div class="col-md-3">  
+         <div class="col-md-3" id="wholecard">  
             <div class="panel panel-default" id="cardcontent">
                 <div class="panel-heading" id="sourcename">
                         {{ source.name}}  
@@ -11,12 +11,45 @@
                     <p id="sourcedesc">
                         {{ source.description |truncate(100)}}
                     </p>
-                    
-                    <a href="{{source.url}}" class="btn btn-info btn-sm" id="sourcebtn">Visit {{source.id}}</a>
 
+                    <div class="allbuttons">
+
+                        <span><a href="/article/{{source.id}}" id="articlebtn">
+                            View Articles:</a></span><br>   
+                        <span><a href="{{source.url}}" id="sourcebtn">Visit {{source.id}}</a></span>
+
+                    </div>
+                        
                 </div>
             </div>
-        </div>
+        </div> 
+        <!-- <div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
+                <div class="card-header">Source:{{source.name}}</div>
+                <div class="card-body">
+                  <h5 class="card-title">{{ source.description |truncate(100)}}</h5>
+                  <p class="card-text"></p>
+                    <div>
+
+                        <span><a href="/article/{{source.id}}" class="btn btn-warning " style="max-width: 30rem;" id="articlebtn">
+                            View Articles:</a></span>   
+                        <span><a href="{{source.url}}" class="btn btn-info" style="max-width: 30rem;" id="sourcebtn">Visit {{source.id}}</a></span>
+
+                    </div>
+                </div>
+              </div><br><br> -->
+
+        <!-- <div class="card-deck">
+                <div class="card">
+                 <img src="..." class="card-img-top" alt="..."> 
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"> </p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    
+                </div>
+                </div>
+                
+        </div> -->
     {% endfor %}   
 </div>
 {% endfor %}

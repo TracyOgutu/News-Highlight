@@ -9,9 +9,6 @@
     font-family: 'Kaushan Script', cursive;
     font-size: 30px;;
 }
-#toggle{
-    font-family: 'Trade Winds', cursive;
-}
 
 #sourcename{
     color:brown;
@@ -26,13 +23,12 @@
     font-family: 'Vidaloka', serif;
     font-size: 20px;
 }
-#sourcebtn{
-    font-size:20px;
-
-}
 #cardcontent{
     background: transparent;
 }
 body{
     background: transparent;
+}
+#wholecard{
+    text-align: left;
 }

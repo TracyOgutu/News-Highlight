@@ -24,14 +24,14 @@ def index():#index() is the view function
     # , entertainment = entertainment_news, general = general_news, sports = sports_news, 
     # science = science_news, technology = technology_news)
 
-@main.route('/article/<int:id>')
+@main.route('/article/<id>')
 def article(id):
 
     article = get_articles(id)
     print('*************get_article****************')
     print(article)
 
-    title = f'{id}'
+    title='Article hub'
 
-    return render_template('article.html',title = title,article = article)
+    return render_template('article.html',title = title,id=id,article = article)
 
