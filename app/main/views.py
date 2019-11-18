@@ -7,22 +7,16 @@ from ..model import Source
 @main.route('/') #route decorator
 def index():#index() is the view function
 
-    # entertainment_news = get_source('entertainment')
-    # print(entertainment_news)
-    # general_news = get_source('general')
-    # sports_news = get_source('sports')
-    # science_news = get_source('science')
-    # technology_news = get_source('technology')
-
-    general_news = get_source('general')
+    general_news = get_source('entertainment')
     print('*************general news*********************')
     print(general_news)
+    sports_news=get_source('sports')
+    business_news=get_source('business')
 
-    title='Latest News'
+    title='News Feed'
 
-    return render_template('index.html',title = title,general=general_news)
-    # , entertainment = entertainment_news, general = general_news, sports = sports_news, 
-    # science = science_news, technology = technology_news)
+    return render_template('index.html',title = title,entertainment=general_news,sports=sports_news,business=business_news)
+   
 
 @main.route('/article/<id>')
 def article(id):

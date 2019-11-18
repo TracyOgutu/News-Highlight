@@ -1,3 +1,6 @@
+body{
+    background-color: chartreuse;
+}
 #general{
     color:brown;
     font-family: 'Kaushan Script', cursive;
@@ -27,11 +30,12 @@
     background: transparent;
 }
 body{
-    background: transparent;
+
+    background-color: cadetblue;
 }
 #wholecard{
     text-align: left;
 }
-#top{
+.top{
     font-family: 'Vidaloka', serif;
 }

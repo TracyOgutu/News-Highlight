@@ -5,8 +5,8 @@
 <div class="container">
 
 	<!-- NEWS -->
-	<h3>Articles from {{id}}</h3>
-	<h3 id="top"> Top Headlines</h3>
+	<h3 class="top">Articles from {{id}}</h3>
+	<h3 class="top" > Top Headlines</h3>
 
 	<div class="row">
 
@@ -21,7 +21,7 @@
 				<div class="panel-body">
 					<div class="caption">
 					<h4><a href="{{article.url}}" target="_blank">{{article.title |truncate(35)}}</a></h4>
-					<!-- <p>{{article.description | truncate(80)}}</p> -->
+					
 					<a href="{{article.url}}" target="_blank"> Read More</a>
 				</div>
 				<div class="footer">
@@ -29,12 +29,12 @@
 
 				</div>
 
-
 			</div>
 		</div>
 	</div>
 
 	{% endfor %}
+</div>
 </div>
 
 {% endblock%}
