@@ -4,13 +4,12 @@ class Config:
     '''
     General configuration parent class
     '''
-    SOURCE_BASE_URL='https://newsapi.org/v2/sources?language=en&category={}?api_key={}'
-    ARTICLE_BASE_URL='https://newsapi.org/v2/everything?language=en&sources={}?api_key={}'
+    SOURCE_BASE_URL='https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
+    ARTICLE_BASE_URL='https://newsapi.org/v2/everything?language=en&sources={}&apiKey={}'
     API_KEY = os.environ.get('API_KEY')
-    # SECRET_KEY = os.environ.get('SECRET_KEY')
-    @staticmethod
-    def __init__app(app)
+    SECRET_KEY = os.environ.get('SECRET_KEY')
 
+    
 class ProdConfig(Config):
     '''
     Production  configuration child class
