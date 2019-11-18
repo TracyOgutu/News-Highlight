@@ -1,0 +1,1 @@
+web: gubicorn manage:app
