@@ -55,6 +55,8 @@ _LANGUAGES_
 
 * _Heroku_
 
+## API
+https://newsapi.org/
 
 ## CONTACT INFORMATION
 
