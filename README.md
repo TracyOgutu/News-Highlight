@@ -51,6 +51,10 @@ _LANGUAGES_
 
 * _Flask_
 
+## DEPLOYMENT
+
+* _Heroku_
+
 
 ## CONTACT INFORMATION
 
