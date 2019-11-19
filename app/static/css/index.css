@@ -14,8 +14,10 @@ body{
 }
 
 #sourcename{
-    color:brown;
+    color:rgb(146, 54, 12);
     font-size: 25px;
+    font-family: 'Kaushan Script', cursive;
+    
 }
 #home{
     font-family: 'Kaushan Script', cursive;
@@ -25,13 +27,15 @@ body{
 #sourcedesc{
     font-family: 'Vidaloka', serif;
     font-size: 20px;
+    color:white;
 }
 #cardcontent{
     background: transparent;
 }
 body{
 
-    background-color: cadetblue;
+
+    background-color: rgb(68, 68, 99);
 }
 #wholecard{
     text-align: left;
@@ -39,12 +43,17 @@ body{
 .top{
     font-family: 'Kaushan Script', cursive;
     font-size:50px;
+    color:white;
 }
 #sourcebtn{
-    font-size: 20px;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
 }
 #articlebtn{
-    font-size: 20px;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+    
 }
+
 
 
