@@ -25,7 +25,6 @@ This project was generated with python version 3.6.8
 Run `python3.6 <name-of-file>` to use the shell 
 
 ## Running the file
-Add the shebang at the beginning of your run.py file
 
 Run chmod a+x start.sh on your terminal
 
@@ -34,14 +33,11 @@ Run ./start.sh
 ## Further help
 To get more help on python, check out the python documentation at https://docs.python.org/3/library/
 
-
-
 ## USER INTERACTION
 
 1. To run the application, type ./start.sh
 2. Navigate to the homepage
 3. A ton of news sources will then be displayed for viewing
-
 
 ## TECHNOLOGIES USED
 
@@ -85,4 +81,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## LINK TO HEROKU
+
 https://newsplug.herokuapp.com/
